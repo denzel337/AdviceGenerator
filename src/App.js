@@ -1,31 +1,40 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Advice from './components/Advice';
 import './App.css';
-this.state ={
-  adviceWhat: null
-}
+
 function App() {
+  const [advice, setAdvice] = useState([]);
+  const [adviceNumber, setAdviceNumber] = useState([]);
+  
   function fetchAdvice(){
     fetch('https://api.adviceslip.com/advice')
-    .then(response => response.json())
-    .then(data => this.setState({adviceWhat:data.advice}))
+    .then((response) => { 
+      return response.json();
+    })
+    .then((adviceData) => {
+      setAdvice(adviceData.slip.advice);
+      setAdviceNumber(adviceData.slip.id);
+      });
+      
+      console.log(advice);
+     
+   
   }
-  const {adviceWhat} = this.state;
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <button onClick={fetchAdvice}> Click</button>
+    
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+         <div>
+        <Advice  advice = {advice}
+        id ={adviceNumber}/>
+      </div>
       </header>
+    
     </div>
   );
 }

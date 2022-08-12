@@ -1,9 +1,14 @@
 import React from 'react';
 
-const fetchAdvice(){
-    fetch('https://api.adviceslip.com/advice').then(response => {
-        response.json();
-    }).then(data => {
-        data.advice;
-    })
+const Advice = (props) => {
+    return (
+    <div className='adviceBox'>
+        <li>
+            <p>{props.id}</p>
+            <h2>{props.advice}</h2>
+        </li>
+    </div>
+    )
 }
+
+export default Advice
