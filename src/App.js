@@ -1,6 +1,12 @@
 import React, {useState} from 'react';
 import Advice from './components/Advice';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiceFive } from '@fortawesome/free-solid-svg-icons'
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+</style>
 
 function App() {
   const [advice, setAdvice] = useState([]);
@@ -20,18 +26,18 @@ function App() {
      
    
   }
-  
+  const element = <FontAwesomeIcon icon={faDiceFive} />
+
   return (
     <div className="App">
       <header className="App-header">
-        
-        <p>
-          <button onClick={fetchAdvice}> Click</button>
-    
-        </p>
-         <div>
+         <div className='adviceBox'>
         <Advice  advice = {advice}
         id ={adviceNumber}/>
+        <div className='lineText'>
+        <hr  /> '' <hr />
+        </div>
+        <button className='adviceButton' onClick={fetchAdvice}> {element} </button>
       </div>
       </header>
     

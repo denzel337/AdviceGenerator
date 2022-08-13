@@ -2,11 +2,16 @@ import React from 'react';
 
 const Advice = (props) => {
     return (
-    <div className='adviceBox'>
+    <div>
         <li>
-            <p>{props.id}</p>
-            <h2>{props.advice}</h2>
+            <div className='adviceText'>
+            <h2>ADVICE #{props.id}</h2>
+            </div>
+            <div className='advice'>
+            <q>{props.advice}</q>
+            </div>
         </li>
+        
     </div>
     )
 }
