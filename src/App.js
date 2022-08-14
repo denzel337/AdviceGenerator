@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Advice from './components/Advice';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -24,8 +24,11 @@ function App() {
       
       console.log(advice);
      
-   
   }
+  useEffect(() => {
+    fetchAdvice()
+  }, []);
+  // To fire when app load
   const element = <FontAwesomeIcon icon={faDiceFive} />
 
   return (
