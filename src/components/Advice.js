@@ -5,7 +5,7 @@ const Advice = (props) => {
     <div>
         <li>
             <div className='adviceText'>
-            <h2>ADVICE #{props.id}</h2>
+            <h3>ADVICE #{props.id}</h3>
             </div>
             <div className='advice'>
             <q>{props.advice}</q>

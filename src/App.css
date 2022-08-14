@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #202733;
@@ -24,9 +14,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 .adviceBox {
   border-style: solid;
@@ -43,6 +30,37 @@
   list-style-type: none;
   padding: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .adviceBox {
+    position: absolute;
+    width: 343px;
+    height: 347px;
+    left: 84px;
+    top: 120px;
+    font-size: 20px;
+  }
+  
+}
+@media only screen and (max-width: 475px) {
+  .adviceBox {
+    position: absolute;
+    width: 343px;
+    height: 347px;
+    left: 16px;
+    top: 120px;
+
+  }
+}
+  @media only screen and (max-width: 400px) {
+    .adviceBox {
+      position: absolute;
+      width: 75%;
+      height: 347px;
+      left: 20px;
+      top: 120px;
+  
+    }
+}
 .adviceText {
   font-size: 13px;
   color: #53FFAA;
@@ -50,23 +68,41 @@
   letter-spacing: 4.08571px;
   font-style: normal;
 }
+
+@media only screen and (max-width: 600px) {
+  .adviceText {
+   font-size: 10px;
+  }
+  
+}
 .advice {
   padding: 50px;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 800;
+  height: 90px;
   
 }
 
 .adviceButton {
-  position: absolute;
   background-color: #53FFAA;
   border-radius: 50%;
   padding: 10px;
+  border: none;
+
 }
-hr {display: inline-block;
+.adviceButton:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 30px #53ffaa;
+
+}
+hr {
+  display: inline-block;
   width:35%;
   background-color:  #4F5D74;
   opacity: 0.3;
-  
+
+}
+.lineText{
+  height: 106px;
 }
