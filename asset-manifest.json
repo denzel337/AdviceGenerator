@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AdviceGenerator/static/css/main.59eb01d0.css",
+    "main.js": "/AdviceGenerator/static/js/main.b6f257a7.js",
+    "static/js/787.28cb0dcd.chunk.js": "/AdviceGenerator/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/AdviceGenerator/index.html",
+    "main.59eb01d0.css.map": "/AdviceGenerator/static/css/main.59eb01d0.css.map",
+    "main.b6f257a7.js.map": "/AdviceGenerator/static/js/main.b6f257a7.js.map",
+    "787.28cb0dcd.chunk.js.map": "/AdviceGenerator/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59eb01d0.css",
+    "static/js/main.b6f257a7.js"
+  ]
+}
